@@ -8,5 +8,7 @@ A firmware is a file with a .HEX extension. Once you have downloaded a new firmw
 
 ![](https://lh3.googleusercontent.com/EFbyxBfAs8eD26Br071pRlVGBOUjrcFwEX1Ax_pE0WcpwjRk45FnxdsmCqsPmJXcxwwYXPbI-RufVLUYqFLqbcxqMHv5NgSaLpRyoereRoDaomJFDeZZOjtgP-NJJNfZAjeZTKIw)
 
-> **Caution** - Do not interrupt the firmware update process! Once the process starts, wait until it is done. The update can take up to 1 minute. The GoGo Widget may appear to be unresponsive, but the update process is still going on. Any interruption can corrupt the firmware and render the GoGo Board unusable. The only way to fix a corrupted firmware is to re-flash the processor using a flashing tool.
+{% hint style="danger" %}
+**Caution** - Do not interrupt the firmware update process! Once the process starts, wait until it is done. The update can take up to 1 minute. The GoGo Widget may appear to be unresponsive, but the update process is still going on. Any interruption can corrupt the firmware and render the GoGo Board unusable. The only way to fix a corrupted firmware is to re-flash the processor using a flashing tool.
+{% endhint %}
 

@@ -2,14 +2,20 @@
 
 Connect a DC motor to port A and try the code below using either Logo or Tinker.
 
+{% tabs %}
+{% tab title="Logo" %}
 ```text
 to motorcontrol
     a, on wait 10 off 
     beep
 end
 ```
+{% endtab %}
 
+{% tab title="Tinker" %}
 ![](https://lh5.googleusercontent.com/Jbk5hycO-WZuUA2C9HCJ5L7YL_Ydjp2rceHi2Hc1MkY_k6fTPnQhwT0IEZWGAbA7HTRYpBsWlmvcLqECfU2m07FYY5l247QnR-xzlAvpnQOMwTlg4fNCXuuIDKP37-icf1gjcJPp)
+{% endtab %}
+{% endtabs %}
 
 This program will turn on motor A for 1 second \(the wait command has a unit of one-tenth of a second\)
 
@@ -45,11 +51,17 @@ The on-off state of the motor ports can be tested using the following reporter.
 
 Here’s an example that will turn off port A if it is on.
 
+{% tabs %}
+{% tab title="Logo" %}
 ```text
 to off_if_on 
     if aon? [ a, off] 
 end
 ```
+{% endtab %}
 
+{% tab title="Tinker" %}
 ![](https://lh5.googleusercontent.com/TDpKihyV6sk349K6SoFBkFG2iBiJZY8_BC9odY2JeoUg_aHxwQ1oTcvo1dl6MzTvX7HJuTt7Zc70jTEtSGOxcQLJco1onvd5An44C2UjueXbRUjRuwQQle8eSAnGtmXihoL-AE8l)
+{% endtab %}
+{% endtabs %}
 

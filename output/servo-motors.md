@@ -4,7 +4,9 @@
 
 To use the servo motor mode, press the servo mode button. When in this servo mode, the DC motor operations will be grayed out. The “Set Power” button will become “Set Head.” To control the servo, move the slider. The servo motor should turn accordingly.
 
-> **Caution** - Make sure you plug in the servo motor correctly. Since there is no polarity enforced on the GoGo Board connector, it is possible to plug the motor in the wrong way. Although this will not harm the motor, it will not function. Different brands have their own color codes. The image below shows the GoGo’s pin layout and some common servo connector color code.
+{% hint style="warning" %}
+Make sure you plug in the servo motor correctly. Since there is no polarity enforced on the GoGo Board connector, it is possible to plug the motor in the wrong way. Although this will not harm the motor, it will not function. Different brands have their own color codes. The image below shows the GoGo’s pin layout and some common servo connector color code.
+{% endhint %}
 
 ![](https://lh3.googleusercontent.com/E-P92ytKBnR2yGSyuSAo_ScLV6fpyvH649EZ4uOXWuyBUq7jM7Frexba-JVSgJbGSazkJCxLz4BVBgA7Jts-7h7DjL5NVpa59huelcd0622FYBs8hEV8Q4myQJN_NJUIYkFNhUir)
 

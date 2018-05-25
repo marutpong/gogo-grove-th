@@ -6,7 +6,9 @@ To start using the GoGo Board, the only program you will need to install is the 
 
 [Click to install the GoGo Widget from the Chrome Web Store](https://chrome.google.com/webstore/detail/gogo-widget/onipnjeomppihdnpnhkffennhafpbkcg)
 
+{% hint style="info" %}
 No driver is required for the GoGo Board. Since the GoGo Board works like a mouse and keyboard \(using a protocol called HID\), your computer recognizes the board immediately.
+{% endhint %}
 
 To check that everything is good with your GoGo Board, first connect the board to your computer using the micro-USB cable. Turn the board on using the on/off switch. You should hear a short beep sequence and the built-in screen should display the word “GoGo” for a few seconds. The GoGo Widget should display a picture of the GoGo Board as well. This indicates that everything is good.
 

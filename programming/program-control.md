@@ -2,6 +2,8 @@
 
 The following example demonstrates a common use of program controls. Connect a button or switch to sensor 1 and a DC motor to the output port A. Then, try the following script.
 
+{% tabs %}
+{% tab title="Logo" %}
 ```text
 to sensor_control
     forever [
@@ -9,8 +11,12 @@ to sensor_control
     ]
 end
 ```
+{% endtab %}
 
+{% tab title="Tinker" %}
 ![](https://lh3.googleusercontent.com/RX7aD-7XjLrC8fdN2COk1b3qmD_DxJBKVE26B7X_PNge5djXd7xR8R53uSJqdf1Lq2UVKVbL5Oc2_NbLY7utTb8F-ITUL1Hz72ht_O2saeLgxB5dJFleC0XGZvwppfyG2O_uIL1j)
+{% endtab %}
+{% endtabs %}
 
 ## IF {#if}
 
@@ -32,11 +38,17 @@ if sensor1 > 500 and sensor2 > 500 [ a, on wait 10 off]
 
 The IF-ELSE program-control is an extension of an IF. In addition to defining what actions to perform when the condition is true, IF-ELSE can also define what to do when the condition is false. The following example modifies the original example so that it turns on the motor when the switch is pressed and off when the switch is released.
 
+{% tabs %}
+{% tab title="Logo" %}
 ```text
 ifelse sensor1 > 500 [a, on] [ a, off]
 ```
+{% endtab %}
 
+{% tab title="Tinker" %}
 ![](https://lh4.googleusercontent.com/ndPgTRI-wVLPlQpLtO_gxfEdrTUAIxfZN33giTVr3foZEGoUmaYb8wVVaVkYj9XK_7yUqZjCp3lb1IDJKGpuHW72nkQ2IJq74S6SUEbqrjgGOXibXuzw2wZDV7Ci_aTFKXHpJkP3)
+{% endtab %}
+{% endtabs %}
 
 ## FOREVER {#forever}
 
@@ -50,11 +62,25 @@ The FOREVER program-control tells the program to loop indefinitely, executing th
 
 The WAITUNTIL program-control allows the program to halt until the given condition is true. The example program below shows how WAITUNIL is used so that the program beeps once every time a switch is pressed
 
+{% tabs %}
+{% tab title="Logo" %}
 ```text
-forever [ if sensor1 > 500 [ beep waituntil [sensor1 < 500]]]
+forever [ 
+    if sensor1 > 500 [ 
+        beep waituntil [sensor1 < 500]
+    ]
+]
 ```
+{% endtab %}
 
+{% tab title="Tinker" %}
 ![](https://lh5.googleusercontent.com/9OVLhSr3SZwCb99-3Lni6eKH6U8mZVMdJJhLWiEdsZf6Bl0LqgQ9tOLJC7f86wpJZi1VG0VfCZaWRu0b4KBroGn-ageKqrVaJHUxgID3G-5T_LaeMNOPaAcyepcLxBeu2c1Sgb8f)
+{% endtab %}
+{% endtabs %}
 
+{% hint style="info" %}
 Note that without the WAITUNTIL, the program will beep repeatedly while the switch remains pressed.
+{% endhint %}
+
+
 

@@ -1,6 +1,6 @@
 # 4.1 Motor Types
 
-Two kinds of motors can be used with the GoGo Board: DC and servo. DC motors are the simplest kind. Once powered, DC motors rotate indefinitely. Servo motors are not usually used for rotation, but more to point at a given angle. More information can be found on Wikipedia’s article on [DC motors](https://en.wikipedia.org/wiki/DC_motor) and s[ervo motors](https://en.wikipedia.org/wiki/Servomotor).
+Two kinds of motors can be used with the GoGo Board: DC and servo. DC motors are the simplest kind. Once powered, DC motors rotate indefinitely. Servo motors are not usually used for rotation, but more to point at a given angle. More information can be found on Wikipedia’s article on [DC motors](https://en.wikipedia.org/wiki/DC_motor) and [servo motors](https://en.wikipedia.org/wiki/Servomotor).
 
 ## DC and Servo Motor Connectors {#dc-and-servo-motor-connectors}
 

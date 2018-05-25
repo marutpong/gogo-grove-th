@@ -1,4 +1,4 @@
-# 3.1 Overview of Sensors Provided in the GoGo Board Kit
+# 3.1 Sensors Provided in the GoGo Board Kit
 
 ## Lever Switches and Buttons {#lever-switches-and-buttons}
 

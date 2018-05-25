@@ -12,8 +12,10 @@ In Tinker, the start and end of a procedure is taken care of visually.
 
 Many procedures can be created. In Logo, the first procedure will be executed when pressing the Run! Button. In Tinker, the primary procedure is colored blue. All other procedures created afterward will become secondary \(they also have a different color\).
 
-Here are guidelines about how to name a procedure:
+{% hint style="info" %}
+#### Here are guidelines about how to name a procedure
 
 * A procedure name cannot be the same as a Logo command.
 * A procedure name must not include space or other non-alphabetical characters.
+{% endhint %}
 

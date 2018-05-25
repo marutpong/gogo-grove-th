@@ -22,5 +22,5 @@ To use the GoGo Board, **the GoGo Widget** is required. It is a program that con
 
 ![](https://lh4.googleusercontent.com/yvlV67xNU8ij-9H5N4pclZCeRfDzY_XQp7WfH3eTBNxatXTWl0dZCDhfaq9YLa5TGGxptiPwG0fvgoZWyJGVToBAXTkvnr7v_RyRyjloVuFx53IfD9iqOwhfTHXBGsvy9-_6Zvb8)
 
-**Tinker** is a drag-and-drop programming environment for the GoGo Board that runs in a browser. Tinker is often used by beginners who are not familiar with the GoGo Board's language. Tinker translates the visual program into text and sends it to the GoGo Widget. Therefore, you need to keep the GoGo Widget running in order to use Tinker.
+[**Tinker**](http://tinker.learninginventions.org/) is a drag-and-drop programming environment for the GoGo Board that runs in a browser. Tinker is often used by beginners who are not familiar with the GoGo Board's language. Tinker translates the visual program into text and sends it to the GoGo Widget. Therefore, you need to keep the GoGo Widget running in order to use Tinker.
 
