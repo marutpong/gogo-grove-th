@@ -1,6 +1,6 @@
 # Summary
 
-* [GoGo Board](./)
+* [GoGo Board](readme.md)
 * [1. Overview](https://github.com/gogoboard/gogo-docs/tree/82b618702696e5b71b5c2145da8224500dc1f082/overview.md)
 * [2. Software Setup and Basic Testing](https://github.com/gogoboard/gogo-docs/tree/82b618702696e5b71b5c2145da8224500dc1f082/software_setup.md)
 * [3. Sensors](https://github.com/gogoboard/gogo-docs/tree/82b618702696e5b71b5c2145da8224500dc1f082/sensors/README.md)
