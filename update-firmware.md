@@ -1,4 +1,4 @@
-# 8 - Updating your Firmware
+# 8. Updating your Firmware
 
 Because the GoGo Board is constantly improved, make sure to upgrade the board’s firmware to the latest version. You can download the latest firmware from GoGo Board website.
 

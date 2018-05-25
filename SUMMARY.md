@@ -15,7 +15,7 @@
   * [4.5 Power Supply Configurations](output/power-supply.md)
 * [5. Using the built-in Screen](built-in-screen.md)
 * [6. Using the Remote Control](6.-using-the-remote-control.md)
-* [7 - Programming with Logo and Tinker](programming/README.md)
+* [7. Programming with Logo and Tinker](programming/README.md)
   * [7.1 Writing and Testing Your First Program](programming/testing.md)
   * [7.2 Understanding Procedures](programming/procedures.md)
   * [7.3 DC Motor Control](programming/dc-motor-control.md)
@@ -24,6 +24,6 @@
   * [7.6 Programming the Built-in Screen](programming/built-in-screen.md)
   * [7.7 Using Variables](programming/variables.md)
   * [7.8 Using the Remote Control](programming/remote-control.md)
-* [8 - Updating your Firmware](update-firmware.md)
+* [8. Updating your Firmware](update-firmware.md)
 * [Credits](credits.md)
 
