@@ -6,7 +6,7 @@
 * [3. Using Sensors](sensor/README.md)
   * [3.1 Sensors Provided in the GoGo Board Kit](sensor/sensor-set.md)
   * 3.2 Sensor Module
-    * [Example Ultrasonic](sensor/3.2-sensor-module/example-ultrasonic.md)
+    * [Example Ultrasonic](sensor/sensor-modules/example-ultrasonic.md)
 * [4. Using Output Ports](output/README.md)
   * [4.1 Motor Types](output/types.md)
   * [4.2 DC Motors \(Direct Current Motors\)](output/dc-motors.md)
