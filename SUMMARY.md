@@ -14,7 +14,7 @@
   * [4.4 Specifications of the DC and Servo Motor Ports](output/specs.md)
   * [4.5 Power Supply Configurations](output/power-supply.md)
 * [5. Using the built-in Screen](built-in-screen.md)
-* [6. Using the Remote Control](6.-using-the-remote-control.md)
+* [6. Using the Remote Control](remote-control.md)
 * [7. Programming with Logo and Tinker](programming/README.md)
   * [7.1 Writing and Testing Your First Program](programming/testing.md)
   * [7.2 Understanding Procedures](programming/procedures.md)
