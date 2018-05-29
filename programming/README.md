@@ -1,4 +1,8 @@
-# 7. Programming with Logo and Tinker
+---
+description: การเขียนโปรแกรมด้วยภาษา Logo และ Tinker
+---
 
-The following examples will cover all of the major features of the Logo language. The examples assume that the reader has a preliminary understanding of programming.
+# 7. การเขียนโปรแกรม
+
+ตัวอย่างถัดจากนี้จะกล่าวถึงการใช้งานและความสามารถโดยรวมของภาษาโลโก้ โดยในตัวอย่างจะถือว่าผู้อ่านมีความเข้าใจในการเขียนโปรแกรมมาระดับหนึ่งแล้ว
 

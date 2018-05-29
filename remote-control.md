@@ -1,18 +1,18 @@
-# 6. Using the Remote Control
+# 6. การใช้งานรีโมทคอนโทรล
 
 ![](https://lh5.googleusercontent.com/eJgmYCN1eL2H_dO4PU64mGqi5jaO3rohIyyUbjIv2-66r26bShlgCvsuYb3DMIB8tCZM9uQ5qekaM1mfTWbY1QDF0glUlQBlutNcj1_CVquW1Y4_v7AUCmZWr5dyj9bfb5CY5nU7)
 
-Using the supplied remote control with the GoGo Board is simple. With the GoGo Widget software running, just point the remote towards the GoGo Board and press any button. You should see a number code appear under the remote icon. Each button will have a unique number code. For example, the number 1 normally has a number code = 128. This code can be later used in your program to perform desired actions.
-
-**Setup**: If your GoGo kit comes with a universal remote, you must configure it before use. The GoGo Board works with Sony remotes. Consult your remote’s manual for detailed instructions on how to control Sony devices.
+การใช้รีโมทคอนโทรลที่ให้มากับ GoGo Board นั้นทำได้ง่าย ด้วยการใช้ซอฟต์แวร์ GoGo Widget เพียงแค่ชี้รีโมทคอนโทรลไปที่ GoGo Board และกดปุ่มใดก็ได้ ผลที่ได้นั้นควรจะเห็นรหัสตัวเลขปรากฏอยู่ด้านใต้ไอคอนรีโมทคอลโทรล ปุ่มแต่ละปุ่มจะมีรหัสตัวเลขที่ไม่ซ้ำกัน ยกตัวอย่างเช่นหมายเลข 1 โดยปกติจะมีรหัสตัวเลขเป็น 128 รหัสนี้สามารถใช้ในโปรแกรมของคุณเพื่อดำเนินการตามที่ต้องการได้ในภายหลัง
 
 {% hint style="info" %}
-### Tips
-
-* Infrared remotes often do not require direct line-of-sight to work. The signal can bounce off walls and penetrate sheets of paper.
-* The “power” button will function the same way as the “run” button on the GoGo Board. Use this button to run or stop a program on the GoGo Board.
-* Holding down a button on the remote usually causes repetitive pulses. This may cause the GoGo Board to receive the same command more than once. Some remotes sends out three pulses even with a quick press. You may have to take this into account when writing your program.
+**การตั้งค่า** หากชุด GoGo Board ของคุณมาพร้อมกับรีโมทสากล คุณต้องกำหนดค่าก่อนใช้งาน โดย GoGo Board สามารทำงานร่วมกับรีโมทคอนโทรลของ Sony คุณสามารถอ่านคู่มือเพื่อดูข้อมูลอย่างละเอียดของรีโมทได้จาก วิธีการควบคุมอุปกรณ์ Sony.
 {% endhint %}
 
+{% hint style="info" %}
+### คำแนะนำ {#คำแนะนำ}
 
+* รีโมทคอนโทรลอินฟาเรดบ่อยครั้งก็ไม่จำเป็นต้องใช้งานกับเส้นทางที่ปราศจากสิ่งกีดขวาง สัญญาณสามารถเด้งออกจากผนังและเจาะแผ่นกระดาษได้
+* ปุ่ม "power" จะทำหน้าที่เหมือนกับปุ่ม "run" บน GoGo Board ใช้ปุ่มนี้เพื่อเรียกใช้หรือหยุดโปรแกรมใน GoGo Board.
+* การกดปุ่มบนรีโมทมักทำให้เกิดการซ้ำของการส่งข้อมูล ซึ่งอาจทำให้ GoGo Board ได้รับคำสั่งเดียวกันมากกว่าหนึ่งครั้ง รีโมทคอนโทรลบางตัวสามารส่งข้อมูลออกไปสามครั้แม้จะกดอย่างรวดเร็วก็ตาม คุณอาจต้องใช้ข้อมูลนี้ในการเขียนโปรแกรมของคุณ.
+{% endhint %}
 

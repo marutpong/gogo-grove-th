@@ -1,6 +1,6 @@
-# 7.3 DC Motor Control
+# 7.3 ควบคุมมอเตอร์กระแสตรง DC Motor
 
-Connect a DC motor to port A and try the code below using either Logo or Tinker.
+เชื่อมต่อมอเตอร์เข้ากับพอร์ต A แล้วทดลองใช้งานโปรแกรมด้านล่างโดยใช้ภาษาโลโก หรือ Tinker
 
 {% tabs %}
 {% tab title="Logo" %}
@@ -17,39 +17,43 @@ end
 {% endtab %}
 {% endtabs %}
 
-This program will turn on motor A for 1 second \(the wait command has a unit of one-tenth of a second\)
+โปรแกรมนี้จะสั่งมอเตอร์ A ให้ทำงานเป็นเวลา 1 วินาที \(คำสั่ง wait มีหน่วยเป็น 1/10 วินาที\)
 
-## Motor Selection {#motor-selection}
+## การเลือกพอร์ตมอเตอร์ {#motor-selection}
 
-Before performing any action, a motor port or ports must first be selected. In Logo, this is done using the port name followed by a comma. For example, “a,” will select port A. “ab,” will select both port A and B. “abcd,” will select all four ports. Notice that the alphabetical order does not affect port selection. That is “abcd,” is the same as “dcab,”.
+ก่อนที่จะใช้งานใดๆ จำเป็นจะต้องเลือกพอร์ตมอเตอร์ที่จะใช้งานก่อน ในภาษาโลโก้ทำได้โดยระบุชื่อพอร์ตมอเตอร์ที่จะใช้แล้วตามด้วยคอมม่า ตัวอย่างเช่น "a," จะเป็นการเลือกใช้งานมอเตอร์พอร์ต A "ab," จะเป็นการเลือกใช้งานมอเตอร์ทั้งพอร์ต A และ B "abcd," จะเป็นการเลือกใช้งานมอเตอร์ทั้ง 4 พอร์ต
 
-In Tinker, motor port selection is done visually using the “talk to motor” block. Tick on the port name to select that port. The example below will select port A.
+{% hint style="info" %}
+ลำดับของตัวอักษรจะไม่มีผลกับการเลือกใช้งานพอร์ตมอเตอร์ การเลือกใช้งาน "**abcd,**" จะให้ผลลัพธ์เหมือน "**dcba,**"
+{% endhint %}
+
+ใน Tinker การเลือกสั่งงานพอร์ตมอเตอร์สามารถใช้งานผ่านบล็อก "talk to motor" ติ้กเลือกพอร์ตตามชื่อพอร์ตที่แสดงอยู่ในบล็อก โดยในตัวอย่างด้านล่างเป็นการเลือกสั่งงานพอร์ตมอเตอร์ A
 
 ![](https://lh5.googleusercontent.com/RIAlPz8CQ7XIGrdMehV3reiucfcil0c99liiPaG71Vr4kStlOZeAkXA-BfU0kNk9_ppYzzxuTptX7lCK0zso5N8_iPFtGKnW-F4nJfPyqAjz6Ut2UxIb7NkI8Bi0gMhrbI11In1W)
 
-## Motor Actions {#motor-actions}
+## การสั่งงานมอเตอร์ {#motor-actions}
 
-Once a port or ports have been selected, actions can be performed on them as shown below.
+เมื่อได้เลือกพอร์ตมอเตอร์ใดมอเตอร์หนึ่ง สามารถที่จะสั่งงานได้ดั่งที่แสดงในตารางด้านล่าง
 
-| Tinker | Logo | Action on the selected motor\(s\) |
+| **Tinker** | **ภาษาโลโก้** | **การทำงานของมอเตอร์ที่ถูกเลือก** |
 | --- | --- | --- |
-| ![](https://lh3.googleusercontent.com/82GjzdzOq9LYwsMe8EpSkSVeH6bfhBBpsKptv5Ux22OwqyodW5AvPnvhioqcEEeiJozItqjyAm401n54wt0Naz0fTmF4iIimVQWb5fwiXqNKlWTB7IuQNjOYnztrr5OIlgYAMpzL) | on | Turns on |
-| ![](https://lh6.googleusercontent.com/mjbh4vLuagsuwlIVP2g7fzAIU88Yzbp3hNDmiDJE5SoqbjTASnYIVdo7dorB3RxRM9Su9SpNqVRofnh8Fgr3trR551Dezjow6zJ9VQEab5gkEu4zLv1LqrhU70HyXLuO7dNN_3g7) | off | Turns off |
-| ![](https://lh4.googleusercontent.com/QhDfp0haE1-fOktFgiiEoYy5gG2hFHXsQ5MbQKsnEDtimY89_LdiRHx4b39LVJCgEGWCFWsyY03xSsaGj3VFM8vTrjRNi4r4PDuM5dbD0qekpDZ6AJDNyvbHmustBSdAZ1ywzeCy) | onfor 1 | Turns on for one-tenth of a second. This number can be changed. |
-| ![](https://lh4.googleusercontent.com/NJ2Sw3t-iL8ToSnF-LYS1JzV9Z8r3l0gG2Ye3IL5jg320GU7h3UyGKvpUS_6X0kL_8nWhfajlNhgwmJGosQ2b9p7gLeF8Bk1S36HDFIEOc7pXKdDGvSjcsw1xJR5IZ-L3S3DXqvJ) | cc | Rotate motor clockwise |
-| ![](https://lh4.googleusercontent.com/3sklhEVuJp2ymW_9vYY-kg0bJJiAC56lLltfkeUudTJvnmQOhHXcWC39gbjBIPMPTQ3q95zmkAj5pgkzYzi0j_x3CQOoACfHtBsMWbpth6phHKN8Qt_6ixl1t7f9d7nz8ZYRugty) | ccw | Rotate motor counter-clockwise |
-| ![](https://lh6.googleusercontent.com/43etM4CC6PygS1UxvnV8s_zUpf2GOzX1Na3lRBGk2ue1yitfVWf0STQNDqWlUr7veCsk6TQoGYgy9_y2jIwI-g8ENwB8LrZPLvSwQ34H4d-KwKauvbb_k-kbtUTQlf0nIVX07MUe) | rd | Reverse the current rotation to the opposite direction. |
-| ![](https://lh3.googleusercontent.com/rjYw9NvwIOvMNSt2NmFXyDMu_40AwlWihKARenoMk8Y8HOAHzTvy6o1TzfwpWP5tOGZVIbCm38nCpL_XyUUrNRDlcHcd8D0XHSXZw4u4pNz8nj6Ra2gOjh5v6zKUlkkg5v932uiY) | setpower 100 | Set the power level to 100. This number can be between 0 \(off\) to 100 \(full power\). |
+| ![](https://lh3.googleusercontent.com/82GjzdzOq9LYwsMe8EpSkSVeH6bfhBBpsKptv5Ux22OwqyodW5AvPnvhioqcEEeiJozItqjyAm401n54wt0Naz0fTmF4iIimVQWb5fwiXqNKlWTB7IuQNjOYnztrr5OIlgYAMpzL) | on | เปิดมอเตอร์ |
+| ![](https://lh6.googleusercontent.com/mjbh4vLuagsuwlIVP2g7fzAIU88Yzbp3hNDmiDJE5SoqbjTASnYIVdo7dorB3RxRM9Su9SpNqVRofnh8Fgr3trR551Dezjow6zJ9VQEab5gkEu4zLv1LqrhU70HyXLuO7dNN_3g7) | off | ปิดมอเตอร์ |
+| ![](https://lh4.googleusercontent.com/QhDfp0haE1-fOktFgiiEoYy5gG2hFHXsQ5MbQKsnEDtimY89_LdiRHx4b39LVJCgEGWCFWsyY03xSsaGj3VFM8vTrjRNi4r4PDuM5dbD0qekpDZ6AJDNyvbHmustBSdAZ1ywzeCy) | onfor 1 | เปิดมอเตอร์เป็นเวลา 1/10 วินาที โดยสามารถปรับเปลี่ยนเวลาได้ |
+| ![](https://lh4.googleusercontent.com/NJ2Sw3t-iL8ToSnF-LYS1JzV9Z8r3l0gG2Ye3IL5jg320GU7h3UyGKvpUS_6X0kL_8nWhfajlNhgwmJGosQ2b9p7gLeF8Bk1S36HDFIEOc7pXKdDGvSjcsw1xJR5IZ-L3S3DXqvJ) | cc | สั่งให้มอเตอร์หมุนตามเข็มนาฬิกา |
+| ![](https://lh4.googleusercontent.com/3sklhEVuJp2ymW_9vYY-kg0bJJiAC56lLltfkeUudTJvnmQOhHXcWC39gbjBIPMPTQ3q95zmkAj5pgkzYzi0j_x3CQOoACfHtBsMWbpth6phHKN8Qt_6ixl1t7f9d7nz8ZYRugty) | ccw | สั่งให้มอเตอร์หมุนทวนเข็มนาฬิกา |
+| ![](https://lh6.googleusercontent.com/43etM4CC6PygS1UxvnV8s_zUpf2GOzX1Na3lRBGk2ue1yitfVWf0STQNDqWlUr7veCsk6TQoGYgy9_y2jIwI-g8ENwB8LrZPLvSwQ34H4d-KwKauvbb_k-kbtUTQlf0nIVX07MUe) | rd | สั่งให้มอเตอร์สลับทิศทางตรงกันข้ามกับที่หมุนอยู่ |
+| ![](https://lh3.googleusercontent.com/rjYw9NvwIOvMNSt2NmFXyDMu_40AwlWihKARenoMk8Y8HOAHzTvy6o1TzfwpWP5tOGZVIbCm38nCpL_XyUUrNRDlcHcd8D0XHSXZw4u4pNz8nj6Ra2gOjh5v6zKUlkkg5v932uiY) | setpower 100 | ตั้งค่าให้มอเตอร์ทำงานเป็นระดับ โดยสามารถตั้งได้ระหว่าง 0\(ปิด\) - 100\(เร็วสุด\) |
 
-## Motor State {#motor-state}
+## สถานะของมอเตอร์ {#motor-state}
 
-The on-off state of the motor ports can be tested using the following reporter.
+สถานะ  เปิด-ปิด ของมอเตอร์สามารถทดสอบได้โดยใช้คำสั่งต่อไปนี้
 
-| Tinker | Logo | Value |
+| **Tinker** | **ภาษาโลโก้** | **ผลลัพธ์** |
 | --- | --- | --- |
-| ![](https://lh3.googleusercontent.com/2Pnfjx3dr7Rm_r2M7G-dxoBgX0OJlbw8QvF6OvD910mJ4YcUkbI6sKZmsgThrLJAOXZfhAO4-cu87AZRs7QFMDR368pcYLWKv06xF4UhqpTqjygwTvTfogaMG8EIoox76H9nGMMO) | aon? | Returns “true” if the specified motor is “on”. If more than one port is selected, returns “true” only if all ports are on. |
+| ![](https://lh3.googleusercontent.com/2Pnfjx3dr7Rm_r2M7G-dxoBgX0OJlbw8QvF6OvD910mJ4YcUkbI6sKZmsgThrLJAOXZfhAO4-cu87AZRs7QFMDR368pcYLWKv06xF4UhqpTqjygwTvTfogaMG8EIoox76H9nGMMO) | aon? | จะให้ค่าเป็น**จริง** เมื่อพอร์ตมอเตอร์ที่เลือกเปิดทำงานอยู่ ถ้าเลือกพอร์ตมอเตอร์มาก กว่าหนึ่งพอร์ต จะให้ค่าเป็น**จริง** เมื่อทุก พอร์ตที่เลือกเปิดทำงานอยู่ |
 
-Here’s an example that will turn off port A if it is on.
+ตัวอย่างนี้แสดงให้เห็นว่า จะทำการปิดพอร์ต A ถ้าพอร์ต A เปิดอยู่
 
 {% tabs %}
 {% tab title="Logo" %}

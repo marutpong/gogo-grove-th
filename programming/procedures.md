@@ -1,21 +1,23 @@
-# 7.2 Understanding Procedures
+# 7.2 ทำความเข้าใจกับการใช้งานโพซีเยอร์ \(Procedure\)
 
-Every command given to the GoGo Board must live inside a procedure. In the example above, the procedure name is “dobeep”. In Logo, a procedure consists of the following structure:
+ทุกคำสั่งที่จะส่งให้โกโกบอร์ด จะต้องอยู่ในโพซีเยอร์ ในตัวอย่างด้านล่าง มีโพซีเยอร์ชื่อ "dobeep" ซึ่งในภาษาโลโกมีโครงสร้างดังนี้
 
 ![](https://lh4.googleusercontent.com/pyLGCZ6GWt-F7hyVxteXWGMuawipVzJQKysb0xHUG9uTervPzEfwn8EclbQ7TTvY-uIRh0CgJen2-MpJYsG5CnKLVtl6wqaJQ7Pk2nOWDE7PMQG_aTcpBrjKBYJJOse-2xAVcpkg)
 
-A procedure begins with the keyword “to” followed by a name. Next is the procedure body where all the commands needed for the procedure can be written. In Logo, more than one command can be written on the same line. However, the commands can take up as many lines as needed. Finally, a procedure always ends with the keyword “end”
+โพซีเยอร์ เริ่มต้นด้วยคำว่า “to” ตามด้วยชื่อ จากนั้นเป็นส่วนของการเขียนคำสั่งทั้งหมดที่จำเป็นสำหรับโพซีเยอร์นั้น ในภาษาโลโกสามารถเขียนคำสั่งได้มากกว่าหนึ่งคำสั่งในบรรทัดเดียวกัน อย่างไรก็ตามคำสั่งสามารถเขียนได้หลายบรรทัดตามต้องการ สุดท้ายโพซีเยอร์จะสิ้นสุดลงด้วยคำว่า “end” เสมอ
 
-In Tinker, the start and end of a procedure is taken care of visually.
+ใน Tinker ส่วนเริ่มต้นและสิ้นสุดของโพซีเยอร์ได้มีการแสดงให้เห็นอย่างชัดเจน
 
 ![](https://lh4.googleusercontent.com/xSKQSvxM8i3z7DgQIsE0mrGvXL4aHR084yxnQJyw6qMmdE4cZwpkQ40vx1iphTbNOVh4HpUZ3POeuLknTdb88x5FTayDtHcMryk1lq0jGCm7qmppjvevzFFMgn1I7ofE8Atp10ab)
 
+{% hint style="info" %}
 Many procedures can be created. In Logo, the first procedure will be executed when pressing the Run! Button. In Tinker, the primary procedure is colored blue. All other procedures created afterward will become secondary \(they also have a different color\).
+{% endhint %}
 
 {% hint style="info" %}
-#### Here are guidelines about how to name a procedure
+### หลักเกณฑ์เกี่ยวกับการตั้งชื่อโพซีเยอร์
 
-* A procedure name cannot be the same as a Logo command.
-* A procedure name must not include space or other non-alphabetical characters.
+* ชื่อโพซีเยอร์ต้องไม่เหมือนกับคำสั่งในภาษาโลโก
+* ชื่อโพซีเยอร์ต้องไม่มีช่องว่างหรืออักขระอื่นที่ไม่ใช่ตัวอักษร
 {% endhint %}
 

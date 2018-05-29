@@ -1,6 +1,6 @@
-# 7.1 Writing and Testing Your First Program
+# 7.1 มาฝึกเขียนโปรแกรมแรกกัน
 
-The following is a simple program that tells the GoGo Board to beep 10 times every 10th of a second.
+โปรแกรมตัวอย่างต่อไปนี้ เป็นคำสั่งให้โกโกบอร์ด ส่งเสียงปิ๊บ 10 ครั้ง ในทุก 1/10 วินาที
 
 ```text
 to dobeep
@@ -8,21 +8,28 @@ to dobeep
 end
 ```
 
-To write Logo programs, select the Tab labeled “Logo” in the GoGo Widget. Enter your logo code in the empty area as shown below.
+ผู้ใช้สามารถเขียนภาษาโลโก โดยเลือก Tab ที่มีชื่อว่า "Logo" ใน **GoGo Widget** จากนั้นจึงเขียนโค้ดภาษาโลโกลงในพื้นที่ว่างดังรูปประกอบด้านล่าง
 
 ![](https://lh6.googleusercontent.com/UEqzAkRPk166KB7GGkmBVv58Zrl8zse01QkX9GZdDacxzmlIHWl3Vsi54iEIZqpf1Ap9NTkvtPuGJFMlAWVoD4DJG8xx6JypWCL7eHC5xtH0Ajcl-lsPRR-D-uu9W7UyBvFSyJgP)
 
-The same program written in Tinker looks like this:
+การเขียนโปรแกรมเดียวกัน โดยใช้ Tinker\(เขียนเป็นบล็อกโปรแกรม\):
 
 ![](https://lh6.googleusercontent.com/cyfDTmWrIRH_Sd_iB4ONamR53McRD3DA_Y11pbBuhCFtxJYCJwGziTkjMr8op0rxZ2f6AzS0gJGVewzi9bJFJI5DJoc6Qw02oUPZw46fuFO1ykqGg5zJmCfL-2rBf28tEaDZIwbk)
 
-Click “**Download**” in the GoGo Widget or “**Write to GoGo Board**” in Tinker to send this program to the GoGo Board. Before sending, the program will be checked for errors. If there are any errors, a message will appear allowing fixes to be made. If the program is successfully saved, the GoGo Board will beep once.
+คลิก "**Download**" ใน GoGo Widget หรือ "**Write to GoGo Board**" ใน Tinker เพื่อจะส่งโปรแกรมที่เขียนไปยังโกโกบอร์ด โดยก่อนที่จะส่ง โปรแกรมจะถูกเช็คความถูกต้อง หากพบปัญหาจะมีข้อความแสดงให้แก้ไขให้ถูกต้อง ถ้าโปรแกรมส่งไปยังโกโกบอร์ด เสร็จสมบูรณ์จะมีเสียงปิ๊บหนึ่งครั้ง
 
-When using Tinker, remember to keep the GoGo Widget running in the background. Tinker requires the GoGo Widget in order to communicate with the GoGo Board.
+{% hint style="info" %}
+หากใช้งาน **Tinker** อย่าลืมเปิด **GoGo Widget** ให้ทำงานเบื้องหลังไว้ด้วย เนื่องจาก Tinker มีการใช้งาน **GoGo Widget** ในการสื่อสารกับโกโกบอร์ดที่เชื่อมต่ออยู่
+{% endhint %}
 
-The last step is to run this program. This can be done by clicking on the “Run/Stop” button on the screen or by pressing the physical “Run!” button on the GoGo Board itself. In this example, when the program runs, the GoGo Board will beep ten times. A red “run” LED on the lower-right of the GoGo Board will light up while a program is running and will go off when the program is completed. The whole process is illustrated below.
+ขั้นตอนสุดท้ายคือการรันโปรแกรม ผู้ใช้สามารถรันโปรแกรมได้โดยคลิกปุ่ม "Run/Stop" บน **GoGo Widget** หรือ Tinker นอกจากนั้นยังสามารถกดปุ่ม "Run!" ที่อยู่บนโกโกบอร์ด ได้อีกด้วย ในตัวอย่างนี้เมื่อรันโปรแกรมโกโกบอร์ด จะส่งเสียงปิ๊บ 10 ครั้ง หลอดไฟ "run" LED สีแดงที่อยู่ทางด้านล่างขวาของตัวบอร์ดจะติดขึ้นมาในขณะที่โปรแกรมทำงาน และจะดับลงเมื่อโปรแกรมทำงานเสร็จสิ้น โดยกระบวนการทั้งหมดจะเป็นดังรูปประกอบด้านล่างนี้  
+
 
 ![](https://lh6.googleusercontent.com/q4fQ3aw1q6tOKSh61AeX-r5gI_WmVTXqs4oNkfTB19WJoNNcb3pHJjTRfXb2ajltwEfunIBJc56rxJ96XBANrc9kf1nk46y3cTvYbxXTIPIsS6ekNvcq6Tbt3coAW_oMR1sX0AYt)
 
-Once a program has been saved to the GoGo Board, it remains there even when the board is disconnected from the computer or when it looses power. That means the GoGo Board can run the program independently as long as it has power.
+{% hint style="info" %}
+โปรแกรมที่ Download มายังโกโกบอร์ด จะถูกบันทึกไว้ ถึงแม้ว่าจะไม่ได้เชื่อมต่อกับคอมพิวเตอร์ หรือไม่มีพลังงานเลี้ยงตัวบอร์ด โปรแกรมจะยังคงอยู่และสามารถทำงานได้ โดยจ่ายไฟให้ตัวบอร์ดแล้วกดปุ่ม Run บนตัวบอร์ดได้เลย
+{% endhint %}
+
+
 

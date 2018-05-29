@@ -1,14 +1,20 @@
-# 3. Using Sensors
+# 3. การใช้เซนเซอร์
 
-Up to 8 analog sensors can be connected to the GoGo Board. The sensor ports are located at the lower part of the GoGo Board and are labeled 1-8. The GoGo Board also has two digital sensor ports located at the upper right corner and labeled I2C-1, I2C-2.
+โกโกบอร์ดสามารต่อกับเซนเซอร์แบบอนาลอกได้ทั้งหมด 8 ตัว โดยพอร์ทสำหรับเสียบเซนเซอร์นั้นจะเรียงกันอยู่ที่ด้านล่างของตัวบอร์ดโดยมีการระบุลำดับของเซนเซอร์กำกับไว้ นอกจากนั้นตัวบอร์ดสามารถต่อกับเซนเซอร์ดิจิตอลได้อีก 2 พอร์ท ตำแหน่งของพอร์ทสำหรับเซนเซอร์ดิจิตอลจะอยู่ตรงมุมด้านขวาบนของตัวบอร์ดและมีการระบุ I2C-1 และ I2C-2 กำกับไว้เช่นกัน
 
-Analog sensors are simple to use. The GoGo kit comes with a rich set of sensors out of the box. Since the GoGo Board is compatible with the “[Grove](http://www.seeedstudio.com/wiki/Grove_System)” system, a much bigger selection of sensors can be obtained from [SEEED studio](https://www.seeedstudio.com). Note that not all sensors on the SEEED store are compatible with the GoGo Board. Please refer to the compatibility chart \(link required\) before making a purchase.
+ในชุดโกโกบอร์ดจะมาพร้อมกับชุดเซนเซอร์แบบอนาลอกหลายหลายชนิด ซึ่งเซนเซอร์ชนิดนี้ใช้งานได้ไม่ยาก โดยแบบพอร์ทที่ใช้ต่อเซนเซอร์เข้ากับบอร์ดถูกออกแบบมาให้ใช้เป็นมาตรฐานที่เรียนกว่า “[Grove](http://www.seeedstudio.com/wiki/Grove_System)” ซึ่งเป็นมาตรฐานของสายสำหรับต่อกับเซนเซอร์และตัวขับต่างๆ สารมารถดูเซนเซอร์ทั้งหมดที่ใช้มาตรฐานนี้ได้ที่ [SEEED studio](https://www.seeedstudio.com/)
 
-To use a sensor, simply use the supplied sensor cable to connect any sensor to a sensor port. The GoGo Widget displays sensor values as bar graphs with numbers below them. As an example, try connecting a light sensor to port number 1. Exposing this sensor to different levels of brightness will cause the sensor value to change. Try to cover the light sensor using your hand and then release it. You should see sensor 1’s value change accordingly as illustrated in the images below.
+{% hint style="warning" %}
+ เซนเซอร์จาก SEEED store อาจจะใช้ร่วมกับโกโกบอร์ดไม่ได้ ให้ท่านตรวจสอบความเข้ากันได้ของเซนเซอร์ก่อนทำการสั่งซื้อ
+{% endhint %}
+
+การใช้เซนเซอร์นั้นไม่ยากเพียงเสียบสายเข้ากับตัวเซนเซอร์ และอีกด้านของสายเสียบเข้ากับพอร์ทเซนเซอร์บนบอร์ด บนตัวโปรแกรม GoGo Widget จะแสดงค่าของเซนเซอร์แต่ละพอร์ทโดยอัตโนมัติโดยจะแสดงออกมาในรูปแบบของกราฟแท่งพร้อมกับค่าของเซนเซอร์กำกับอยู่
+
+ดังตัวอย่างข้างล่างนี้ เป็นการต่อเซนเซอร์แสงเข้ากับพอร์ทเซนเซอร์ 1 จะเห็นได้ว่าค่าเซนเซอร์นั้นมีการเปลี่ยนแปลงซึ่งเกิดจากระดับความเข้มของแสงที่แตกต่างกัน หากใช้มือบังแล้วจากนั้นค่อยปล่อยมือออก ค่าของเซนเซนเซอร์ 1 ก็จะเปลี่ยนแปลงด้วย
 
 ![](https://lh6.googleusercontent.com/6yTco31szs6078l93HRB9q2I76E3GgGeaKNruVVN66T6WFMgW_M0cGlpu2hOnONOXDoEWIIZLyXZ5Y3jreHbETzOVykryOB-cv_hnki3Je2jrOPeu8WFrVxAcG9uMgyK0n3-mQMf)![](https://lh3.googleusercontent.com/5dL8I6zWLLvC7u3JPIC1LAeM7tLWCnavBtvvwpu-FAdT0WEqNpzUaqozXyUVSACS5wAN1S17FMF1iOWgyrghnHvCchIhDD5QQxd7zyvvWF73oxubuNA5S8d7K1UkaaQaQpXTa5bt)
 
 ![](https://lh5.googleusercontent.com/QvWqZgmP5hgKislAgSgjRPdADaLEkf2cjYgF2TIwoosQU1xMpPBqeaMQ7W3Mko0_N3bL6B9fZQcymhigVojpzzdaIbazg0wFjREoCyLNZz_dTVztJNF00lO5ZOZdT_DFuRHytgri)![](https://lh3.googleusercontent.com/vacLSnU69A5KbTvpA-7kqdfsQ_ljvbpEYNq7-fAAe5LVwR9Z7kq2YY8nTq4PZU3tMXivyzBnZB0ymlh5MZEde96ERP4jpwD_FOSQXCLpisdlz_56eq-tsVyLOlV0rTRq_L4ZfrIR)
 
-The value of a light sensor will be higher in the top figure because it receives more light than the one below it.
+ค่าของเซนเซอร์จะสูงดังรูปข้างบน เนื่องจากได้รับแสงมากกว่ารูปข้างล่าง
 

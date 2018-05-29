@@ -1,6 +1,6 @@
-# 7.7 Using Variables
+# 7.7 การใช้งานตัวแปร
 
-A variable is a powerful tool that allows a program to count, store data, define values and much more. The following example shows how a variable can be used to count the number of times a switch is pressed and shows the number on the GoGo Board’s screen. Connect a switch to sensor port 1 and run the following program.
+ตัวแปรเป็นเครื่องมืออย่างหนึ่งที่ทำให้โปรแกรมสามารถนับ เก็บข้อมูล กำหนดค่า และอื่นๆ ดังตัวอย่างต่อไปนี้ที่แสดงให้เห็นว่าตัวแปรถูกใช้สำหรับนับจำนวนครั้งการกดสวิตซ์และแสดงผลบนจอของโกโกบอร์ด โดยเชื่อมต่อสวิตซ์ที่พอร์ตเซ็นเซอร์ 1 และรันโปรแกรมต่อไปนี้
 
 {% tabs %}
 {% tab title="Logo" %}
@@ -23,11 +23,11 @@ end
 {% endtab %}
 {% endtabs %}
 
-The set command is used to assign a value to a variable. In the above example, the program starts by setting a variable named “counter” to 0. Note that this initial setting also makes the variable name valid and available for use in the rest of the program. In Logo the variable name “counter” can be used as an argument for any command that takes an expression as an input.
+คำสั่ง "set" ถูกใช้เพื่อกำหนดค่าในตัวแปร ในตัวอย่างข้างต้นโปรแกรมเริ่มต้นจากตั้งค่าตัวแปรชื่อ "counter" ให้มีค่าเท่ากับ 0 สังเกตว่าการตั้งค่าเริ่มต้นนี้ควรตั้งชื่อตัวแปรให้ถูกต้องเพราะจะนำไปใช้งานในส่วนที่เหลือของโปรแกรม ในตัวอย่างตัวแปรที่ชื่อ "counter" สามารถใช้เป็นอาร์กิวเมนต์สำหรับคำสั่งใดๆที่มีการรับค่า
 
-In Tinker, variables are listed in the section “Variables” and can be managed from there. To create a new variable, drag a “set” block onto the programing area. Then, click the drop-down button and there will be menus to either rename that variable or create a new one.
+{% hint style="info" %}
+ใน Tinker ตัวแปรจะถูกระบุไว้ในส่วน “Variables” และสามารถจัดการได้จากตรงนั้น หากต้องการสร้างตัวแปรใหม่ ให้ลากบล็อก “set” ไปยังพื้นที่สำหรับเขียนโปรแกรม จากนั้นคลิกปุ่มเลือกแบบเลื่อนลง \(drop-drown\) จะมีรายการแสดงให้เลือก เพื่อเปลี่ยนชื่อ หรือสร้างตัวแปรใหม่
+{% endhint %}
 
 ![](https://lh3.googleusercontent.com/5at4y_DcVZyn-h1WJaH5GqmF5772E-W9qP6dY01BqZDlH7DH6GXHfvr8qRZ0Xc8t75S6OckO79i0BGjO-qSpvwxujLyUm1KEMc-8bQvx7G45NJlBWzfy01dne1PgFViZoUmuWVk7)
-
-
 

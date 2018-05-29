@@ -1,17 +1,17 @@
-# 4.4 Specifications of the DC and Servo Motor Ports
+# 4.4 ข้อมูลจำเพาะของพอร์ตมอเตอร์กระแสตรงและพอร์ตเซอร์โว
 
-## DC Motor Ports {#dc-motor-ports}
+## มอเตอร์กระแสตรง {#dc-motor-ports}
 
-* Maximum of 4 DC motors can be driven simultaneously
-* The power and direction can be individually selected for each port
-* Each port has LEDs that indicate the on/off status. The LED color indicates the direction
-* Power adjustment is available from 0 \(lowest, equivalent to “off”\) to 100 \(highest\)
-* Each port can drive 3-12v motors with current under 500mA per port.
-* The port automatically shuts-off if overheated.
+* สามารถใช้งานได้สูงสุด 4 มอเตอร์พร้อมกัน
+* พลังงานและทิศทางแต่ละพอร์ตอิสระต่อกัน
+* แต่ละพอร์ตจะมีไฟ LEDs บ่งบอกสถานะและแสดงสีทิศทางที่หมุน
+* สามารถปรับค่าพลังงานได้ตั้งแต่ 0\(เบาที่สุดหรือเทียบเท่าสถานะ “off”\) ถึง 100 \(แรงที่สุด\)
+* แต่ละพอร์ตสามารถจ่ายพลังงานที่มีความต่างศักย์ได้ในช่วง 3 – 12V และกระแสไม่เกิน 500 mAต่อพอร์ต
+* พอร์ตจะทำการตัดพลังงานอัตโนมัติเมื่อมีการใช้งานเกินข้อจำกัด
 
-## Servo Motors {#servo-motors}
+## เซอร์โวมอเตอร์ {#servo-motors}
 
-* Can drive up to 4 servo motors at the same time
-* All 4 servo motors can be independently controlled
-* Works only with 5V servo motors. Most hobby servo motors are 5 volts.
+* สามารถเชื่อมต่อและใช้งานเซอร์โวได้พร้อมกันสูงสุดถึง 4 ตัว
+* เซอร์โวทุกตัวสามารถหมุนหรือใช้งานได้ตามต้องการและควบคุมได้อย่างอิสระ
+* รองรับเซอร์โวแบบ 5V เท่านั้นโดยปกติแล้วเซอร์โวจะทำงานที่ความต่างศักย์ 5 โวลต์\(V\)
 

@@ -1,6 +1,7 @@
-# 7.8 Using the Remote Control
+# 7.8 การใช้งานรีโมทคอนโทรล
 
-Making use of the received IR remote commands are done using the Logo commands “newir?” and “ir”. Here is an example:
+โกโกบอร์ดสามารถใช้งานร่วมกับรีโมทคอนโทรลได้ โดยใช้คำสั่งภาษาโลโก้ "**newir?"** และ "**ir**_"_ ดังตัวอย่างต่อไปนี้  
+
 
 {% tabs %}
 {% tab title="Logo" %}
@@ -23,5 +24,5 @@ end
 {% endtab %}
 {% endtabs %}
 
-The above program checks if their is a new command from the remote control using the “newir?” in Logo and the “new infrared?” block in Tinker. When true, the infrared code is retrieved using “ir” in Logo and the “get infrared” block in Tinker. This infrared code is stored in the variable “command”. A sequence of “if” statements determine the received code and carries out different actions.
+จากโปรแกรมตัวอย่างมีการเช็คเงื่อนไขว่า _มีคำสั่งจากรีโมทคอนโทรลหรือไม่_ ซึ่งใช้คำสั่งภาษาโลโก้ "**newir?**" หรือบล็อกคำสั่ง "**new infrared?**" เมื่อเป็นจริง ให้รับรหัสอินฟราเรด ใช้คำสั่งภาษาโลโก้ "**ir**" หรือบล็อกคำสั่ง "**get infrared**" โดยนำรหัสอินฟราเรดเก็บไว้ในตัวแปรที่ชื่อ **command** จากเงื่อนไขตามลำดับในตัวอย่าง มีการตรวจสอบรหัสอินฟราเรดที่รับมา แล้วสั่งทำงานตามแต่ละเงื่อนไข
 

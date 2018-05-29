@@ -1,6 +1,6 @@
-# 7.4 Servo Motor Control
+# 7.4 การควบคุมมอเตอร์เซอร์โว
 
-Controlling a servo motor usually means setting the desired motor position. The command to perform this action in Logo is “seth” which stands for “set heading”. In Tinker, use the block “Set servo heading”. Consider the following example:
+การควบคุมมอเตอร์เซอร์โวมักจะหมายถึงการตั้งตำแหน่งมอเตอร์ตามต้องการ คำสั่งการดำเนินการนี้ ในภาษาโลโกคือ “**seth**” ซึ่งย่อมาจาก “set heading” ใน Tinker ใช้บล็อก “Set servo heading” พิจารณาดังตัวอย่างต่อไปนี้
 
 {% tabs %}
 {% tab title="Logo" %}
@@ -18,17 +18,17 @@ end
 {% endtab %}
 {% endtabs %}
 
-The above example will turn a servo motor connected to servo port A to the heading position “10”, wait for 1 second and then turn the servo to the heading position “40”.
+จากตัวอย่างข้างต้น มอเตอร์เซอร์โวจะเชื่อมต่อกับพอร์ตเซอร์โว A และตั้งค่าตำแหน่งเซอร์โวเป็น 10 รอ 1 วินาทีแล้วหมุนเซอร์โวไปที่ตำแหน่ง 40
 
-Position 10 Position 40
+ตำแหน่งที่ 10 และตำแหน่งที่ 40
 
 ![](https://lh5.googleusercontent.com/xtZp4ZZl4JNFAgu8kyWSmIFpz0SxSFi2ntoOE3QUd8pL_MhZELgxHFgT0YgFS0w38-FUdsYMNWRx0kAqkeN9XruZ7gXuftvatO05IDgA-FmVsGJd-sIU-IKQD3q_PyMbPxiQhq9k)
 
-## Servo Motor Heading Position {#servo-motor-heading-position}
+## ตำแหน่งทิศทางของมอเตอร์เซอร์โว {#servo-motor-heading-position}
 
-The heading positions “10” or “40” in the example does not correspond to a standard angle or unit. It is a GoGo Board internal position number. Therefore, you need to determine what number to use so that the motor points to the desired direction. This is easily done using the GoGo Widget’s manual servo controls as described earlier.
+ตำแหน่งที่ 10 หรือ 40 ในตัวอย่างข้างต้น เป็นหมายเลขตำแหน่งในโกโกบอร์ด ซึ่งไม่มีหน่วยมาตรฐานใดๆ ดังนั้นคุณต้องกำหนดตัวเลขที่ใช้เพื่อให้มอเตอร์ชี้ไปยังทิศทางที่ต้องการ ทำได้ง่ายโดยใช้ **GoGo Widget** ตามที่อธิบายไว้ก่อนหน้านี้
 
 {% hint style="warning" %}
-Do not use a heading position that exceeds the bounds of the servo. Since servos do not rotate a full circle, exceeding the heading bounds could break the internal gearings of the servo. Although different servo models and brands have slight variations but, typically, the heading value should stay between 10 - 40.
+ห้ามใช้ตำแหน่งที่เกินขอบเขตของเซอร์โว เนื่องจากเซอร์โวไม่สามารถหมุนเป็นวงกลมเต็มวง มิฉะนั้นจะทำลายฟันเฟืองภายในเซอร์โว แม้ว่ารูปแบบและยี่ห้อที่ต่างกันของเซอร์โวจะทำให้มีการเปลี่ยนแปลงค่าเล็กน้อย แต่โดยปกติค่าตำแหน่งจะอยู่ระหว่าง 10-40
 {% endhint %}
 

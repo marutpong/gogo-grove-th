@@ -1,14 +1,14 @@
-# 8. Updating your Firmware
+# 8. การอัปเดทเฟิร์มแวร์
 
-Because the GoGo Board is constantly improved, make sure to upgrade the board’s firmware to the latest version. You can download the latest firmware from GoGo Board website.
+เนื่องจาก GoGo Board มีการปรับปรุงอย่างต่อเนื่องเพื่อให้แน่ใจว่าได้อัพเกรดเฟิร์มแวร์ของบอร์ดเป็นเวอร์ชั่นล่าสุด คุณสามารถดาวน์โหลดเฟิร์มแวร์ล่าสุดได้จากเว็บไซต์ของ GoGo Board.
 
-## Using the GoGo Widget to Update the Firmware {#using-the-gogo-widget-to-update-the-firmware}
+## การใช้งาน GoGo Widget เพื่ออัพเดทเฟิร์มแวร์ {#using-the-gogo-widget-to-update-the-firmware}
 
-A firmware is a file with a .HEX extension. Once you have downloaded a new firmware and saved it to your computer, launch the GoGo Widget and click on the “Configurations” tab. There you will see a section on the screen that tells you what firmware version is running on the GoGo Board. Click on the “Update from file” button and select the new firmware HEX file. The update will take place automatically. The LED on the GoGo Board will rapidly blink during this process. Once the update is done, a new version number should be seen on the screen.
+เฟิร์มแวร์คือไฟล์ที่มีส่วนขยายเป็น . HEX เมื่อคุณดาวน์โหลดเฟิร์มแวร์ใหม่และบันทึกลงในคอมพิวเตอร์ของคุณแล้วให้เปิดใช้งาน GoGo Widget และคลิกที่แท็บ "**Configurations**" ที่นั่นคุณจะเห็นส่วนบนหน้าจอที่บอกให้คุณทราบว่าเฟิร์มแวร์รุ่นใดที่รันอยู่ใน GoGo Board คลิกปุ่ม "**Update from file**" และเลือกไฟล์ HEX เฟิร์มแวร์ใหม่ การอัปเดตจะเกิดขึ้นโดยอัตโนมัติ LED บน GoGo Board จะกระพริบอย่างรวดเร็วในระหว่างกระบวนการนี้ เมื่ออัปเดตเสร็จสิ้นจะเห็นหมายเลขเวอร์ชันใหม่บนหน้าจอ
 
 ![](https://lh3.googleusercontent.com/EFbyxBfAs8eD26Br071pRlVGBOUjrcFwEX1Ax_pE0WcpwjRk45FnxdsmCqsPmJXcxwwYXPbI-RufVLUYqFLqbcxqMHv5NgSaLpRyoereRoDaomJFDeZZOjtgP-NJJNfZAjeZTKIw)
 
 {% hint style="danger" %}
-**Caution** - Do not interrupt the firmware update process! Once the process starts, wait until it is done. The update can take up to 1 minute. The GoGo Widget may appear to be unresponsive, but the update process is still going on. Any interruption can corrupt the firmware and render the GoGo Board unusable. The only way to fix a corrupted firmware is to re-flash the processor using a flashing tool.
+**อย่าขัดจังหวะการอัพเดตเฟิร์มแวร์!** เมื่อกระบวนการเริ่มต้นแล้วให้รอจนกว่าจะเสร็จสิ้น การอัปเดตอาจใช้เวลาถึง 1 นาที GoGo Widget อาจดูเหมือนจะไม่ตอบสนอง แต่กระบวนการอัพเดทยังคงดำเนินต่อไป การขัดจังหวะใด ๆอาจทำให้เฟิร์มแวร์เสียหายและทำให้ GoGo Board ไม่สามารถใช้งานได้ วิธีเดียวที่จะแก้ไขเฟิร์มแวร์ที่เสียหายคือการรีบูตการทำงานใหม่โดยใช้เครื่องมือ flashing
 {% endhint %}
 

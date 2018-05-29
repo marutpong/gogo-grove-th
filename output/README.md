@@ -1,4 +1,5 @@
-# 4. Using Output Ports
+# 4. การใช้งานช่องเอาต์พุต
 
-There are 4 output ports available. These ports are commonly referred to as motor ports. However, they can be used to control other types of actuators such as lights and relays as well. The four ports are located on the top left and are labeled A,B,C and D.
+โกโกบอร์ดนั้น มีช่องเอาต์พุตจำนวน 4 ช่อง โดยช่องเหล่านั้นสามารถใช้งานร่วมกับมอเตอร์ได้ทันที แต่บอร์ดยังสามารถเชื่อมต่อกับเอาต์พุตประเภทอื่นๆได้เช่นกัน อาทิ หลอดไฟ รีเลย์ เป็นต้น โดยช่องเอาต์พุตเหล่านั้นจะมีตำแหน่งอยู่บนบอร์ด และมีชื่อเรียกแต่ละช่องว่า A ,B ,C ,D ตามลำดับ[  
+](https://docs.gogoboard.cf/th/sensors/sensors_provided.html)
 

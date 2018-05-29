@@ -1,16 +1,16 @@
-# 5. Using the built-in Screen
+# 5. การใช้งานจอแสดงผลบนบอร์ด
 
 ![](https://lh5.googleusercontent.com/mK_OzXPjFyGLdQWsmQgcnDX6K-704ealMpfpLbjSv_QyEOEooBX3GGV57ImSo38G9Zea18HamrAwFnit3r22dEYJHz1O7ka36GqlK_qO5sI-_4XJHApHcDX9WFEhga7LIWSbfRbm)
 
-The built-in 7-segment screen is a useful tool to show text or numbers that enhances the functionality of the program or help with the debugging process.
+หน้าจอแสดงผลที่มีอยู่ภายในบอร์ดเป็นเครื่องมือที่มีประโยชน์มากในการแสดงข้อความหรือตัวเลขซึ่งจะช่วยเพิ่มฟังก์ชันการทำงานของโปรแกรมหรือช่วยในการหาข้อผิดพลาดในการเขียนโปรแกรมได้
 
-## Screen Pages {#screen-pages}
+## หน้าจอแสดงผลต่าง ๆ {#screen-pages}
 
-The built-in screen consists of many pages, each displaying different values as shown below. Press the “Display Select” button near the screen to cycle through pages.
+ในส่วนหน้าจอ ภายในจะประกอบด้วยหน้าแสดงผลจำนวนมากแต่ละหน้าจะแสดงค่าต่างๆตามที่แสดงด้านล่าง กดปุ่ม "เลือกการแสดงผล" ที่อยู่ใกล้กับหน้าจอเพื่อหมุนเวียนไปหน้าถัดไป
 
-![](https://lh3.googleusercontent.com/oWCrBb33rsPI6Zf2eTBWYty4vudTO2vlfqzp0Jc-Ol2aGEz9g88HHDJs-qbJWNTXP8u1Fb9To4voiNkS0L7lsGwxus3B14rfW27PFmfycJM7HPnpb9J80v-ztJELNVLmhnJYThB5)
 
-* **User**. This is the default screen where all the values from the user program will be shown.
-* **Off**. This screen is used to deactivate the screen.
-* **Sensor 1 - Sensor 8**. Each screen will show sensor values from the corresponding port number.
+
+* **User :** คือหน้าจอเริ่มต้นที่จะแสดงค่าทั้งหมดจากโปรแกรมของผู้ใช้งาน
+* **Off :** หน้าจอนี้ใช้เพื่อปิดการใช้งานหน้าจอ
+* **Sensor 1 - Sensor 8 :** แต่ละหน้าจอจะแสดงค่าเซ็นเซอร์ตามหมายเลขพอร์ตของอุปกรณ์
 

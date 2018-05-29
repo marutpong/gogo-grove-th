@@ -1,16 +1,16 @@
-# 4.1 Motor Types
+# 4.1 ประเภทมอเตอร์
 
-Two kinds of motors can be used with the GoGo Board: DC and servo. DC motors are the simplest kind. Once powered, DC motors rotate indefinitely. Servo motors are not usually used for rotation, but more to point at a given angle. More information can be found on Wikipedia’s article on [DC motors](https://en.wikipedia.org/wiki/DC_motor) and [servo motors](https://en.wikipedia.org/wiki/Servomotor).
+สำหรับมอเตอร์ที่สามารถใช้งานกับโกโกบอร์ดได้นั้นมีอยู่ 2 ประเภทด้วยกันคือ ไฟฟ้ากระแสตรงและเซอร์โว สำหรับมอเตอร์แบบไฟฟ้ากระแสตรงนั้นมีหลักการทำงานซึ่งง่ายและไม่ซับซ้อน สามารถใช้งานได้ทันที เมื่อให้พลังงานกับมอเตอร์ไฟฟ้ากระแสตรง มอเตอร์จะหมุนไปเรื่อยๆ อย่างไม่มีกำหนดหยุด ตราบใดที่ได้รับพลังงาน ส่วนมอเตอร์อีกประเภทนั้นคือ มอเตอร์แบบเซอร์โว ซึ่งการใช้งานต้องอาศัยความเข้าใจก่อน เนื่องจากเซอร์โวมอเตอร์มีการหมุนเป็นองศาตามมุมต่างๆและมีขอบเขตจำกัดตามข้อจำกัดของเซอร์โวมอเตอร์รุ่นนั้นๆ สำหรับรายละเอียดเพิ่มเติมสามารถหาได้เพิ่มเติมจาก วิกิพีเดีย \([มอเตอร์ไฟฟ้ากระแสตรง](https://en.wikipedia.org/wiki/DC_motor)และ[เซอร์โวมอเตอร์](https://en.wikipedia.org/wiki/Servomotor)\)
 
-## DC and Servo Motor Connectors {#dc-and-servo-motor-connectors}
+## ช่องต่อมอเตอร์ไฟฟ้ากระแสตรงและเซอร์โวมอเตอร์ {#dc-and-servo-motor-connectors}
 
 ![](https://lh4.googleusercontent.com/rhjxX3MArXKhWovk1XBPgOfXUHawzDyA127hf0SThAqoY62IascChY4Pnfi5XdnQWTACOc2nixoO95nOBvTFXaXPXfQFQGUAnDBuaIvVise-ckyHxvAj7VvCBw8lcE30IYeGxaV4)
 
-DC motors use the white 2-pin JST connectors while servo motors use the 3-pin male connectors. Each port can control only one type of motor at a time. That is, you cannot connect both a DC and a servo motor to the same port. For example, you cannot use DC-A and Servo-A at the same time. But using DC-A and Servo-B is fine.
+มอเตอร์กระแสตรงจะใช้ตัวต่อแบบJST 2 ขาสีขาว และ เซอร์โว จะใช้ตัวต่อแบบมีรู 3 รู โดยแต่ละพอร์ตของโกโกบอร์ด สามารถใช้งานได้เพียงครั้งละ 1 ชนิด หรือกล่าวได้ว่า ไม่สามารถควบคุมหรือสั่งงาน มอเตอร์กระแตรงหรือเซอร์โวได้ในพอร์ตเดียวกัน เช่น ไม่สามารถต่อมอเตอร์กระแสตรงกับเซอร์โว เข้ากับพอร์ต A พร้อมกันได้ แต่ควรจะต่อแบบที่ถูกต้องคือ พอร์ต A ต่อมอเตอร์กระแสตรง และ พอร์ต B ต่อเซอร์โว
 
-## Choosing the Motor Mode {#choosing-the-motor-mode}
+## การ**เลือกโหมดของมอเตอร์** {#choosing-the-motor-mode}
 
 ![](https://lh3.googleusercontent.com/5I8eaB_EbHAVS6k-1oHP4-LxyByhncplIO5_0grMnK4yUb1lQNajp08kchW9k3jtXH6UX4yX12KbYen2jldsc-xnaCLsn9zkqx9n2O8ofDtOIxiCVImU0nYdG1J8WrFeSE30Mc0h)
 
-All four output ports can be independently programmed \(in Logo/Tinker\) to control DC or servo motors. However, the GoGo Widget can control only one type at a time. To perform an operation, select the desired motor ports and then click on the motor type icon as shown above. The available operations will then be shown.
+พอร์ตเอาต์พุต ทั้ง 4 พอร์ตนั้นสามารถเขียนโปรแกรม \(ใน Logo/Tinker\) ให้ควบคุมมอเตอร์หรือเซอร์โวได้อย่างอิสระต่อกัน อย่างไรก็ตาม Gogo widget นั้นจะสามารถควบคุมได้ครั้งละ 1 ประเภทเท่านั้น หากเลือก มอเตอร์กระแสตรง \(DC\) จะปรากฏไอคอน สำหรับคลิกเพื่อเปิดใช้งาน โดยสามารถควบคุมได้เพียงมอเตอร์กระแสตรงเท่านั้น และหากเลือก เซอร์โว \(Servo\) ก็จะปรากฏหน้าต่างควบคุมมุมองศาของเพียงแค่เซอร์โวเท่านั้น
 

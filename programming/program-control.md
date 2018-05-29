@@ -1,6 +1,6 @@
-# 7.5 Program Control
+# 7.5 การเขียนโปรแกรมควบคุม
 
-The following example demonstrates a common use of program controls. Connect a button or switch to sensor 1 and a DC motor to the output port A. Then, try the following script.
+ตัวอย่างต่อไปนี้จะแสดงให้เห็นถึงการใช้งานควบคุมโปรแกรมโดยทั่วไป ให้ลองเชื่อมต่อปุ่มหรือสวิตซ์กับเซ็นเซอร์ 1 และมอเตอร์ไปยังพอร์ตเอาต์พุต A จากนั้นลองใช้โปรแกรมต่อไปนี้
 
 {% tabs %}
 {% tab title="Logo" %}
@@ -20,15 +20,17 @@ end
 
 ## IF {#if}
 
-The IF program-control allows parts of the program to run only when the given condition is met. An IF is always followed by a condition. The example above shows an IF followed by a condition which reads “if sensor 1 is greater than 500”. Then, the commands to be executed are located in the “do” section. In this case, the program will turn on motor A for one second.
+การเขียนโปรแกรมควบคุมแบบ IF คืือการทำให้โปรแกรมทำงานก็ต่อเมื่อตรงตามเงื่อนไขที่กำหนดเท่านั้น IF จะตามด้วยเงื่อนไขเสมอ ตัวอย่างข้างต้นแสดงให้เห็นว่าบล็อก IF ตามด้วยเงื่อนไข "ถ้าค่าเซ็นเซอร์ 1 มากกว่า 50" แล้วคำสั่งที่จะเรียกใช้จะอยู่ในส่วน "do" ในกรณีนี้โปรแกรมจะสั่งให้มอเตอร์ A ทำงานเป็นเวลาหนึ่งวินาที
 
 ## Conditions {#conditions}
 
-Defining a suitable condition for an IF is important. When using sensors, the first step is usually to observe how the sensor values change. Then a condition can be defined. In this example, the sensor value for an unpressed switch is usually 0. This value jumps to 1023 when the switch is pressed. Therefore, the condition “if sensor 1 is greater than 500” really means “if switch pressed”. The number 500 was selected as a rough mid-point between the highest and lowest possible values. Changing this threshold to other numbers such as 100 or 1000 will still work for this example.
+การกำหนดเงื่อนไขที่เหมาะสมสำหรับ IF เป็นสิ่งสำคัญ เมื่อใช้เซ็นเซอร์ ขั้นตอนแรกคือการสังเกตว่าค่าของเซ็นเซอร์มีการเปลี่ยนแปลงอย่างไร จากนั้นจะสามารถกำหนดเงื่อนไขได้ ในตัวอย่างนี้ ค่าเซ็นเซอร์เมื่อไม่ได้กดสวิตซ์มักมีค่าเท่ากับ 0 แต่เมื่อกดสวิตซ์ค่าจะกระโดดไปที่ 1023 ดังนั้นจึงได้เงื่อนไขว่า "ถ้าเซ็นเซอร์ 1 มีค่ามากกว่า 500" ความหมายเช่นเดียวกับ "ถ้ากดสวิตซ์" ตัวเลข 500 ถูกเลือกเป็นจุดกึ่งกลางระหว่างค่าสูงสุดและค่าต่ำสุดที่เป็นไปได้ หากเปลี่ยนเกณฑ์นี้เป็นตัวเลขอื่นๆ เช่น 100 หรือ 1000 โปรแกรมก็ยังสามารถทำงานต่อไปได้สำหรับตัวอย่างนี้
 
-Condition values are more sensitive when using analog sensors, which values change in proportion to their measurements. Consider a light sensor that is used to control a lamp so that the lamp switches on when the house is dark. Let’s say the sensor value is zero when there is no light during the night and the value increases and reaches 800 during the day. What will be a good threshold for the program? 400? The answer is that it depends on how dark it should be before the lamp turns on. A value too low will make the lamp too slow. A value too high will cause the lamp to switch on prematurely. In practice, the programmer will have to obtain a suitable threshold value by observing the sensor value at the time when the lamp owner feels it is dark enough to switch it on. In this case, the condition determines the lamp’s “light sensitivity”.
+{% hint style="info" %}
+ค่าเงื่อนไขจะมีความละเอียดเพิ่มมากขึ้นเมื่อใช้กับเซ็นเซอร์อะนาล็อก ซึ่งค่าจะเปลี่ยนตามสัดส่วนของการวัดสำหรับแต่ละอุปกรณ์ พิจารณาเซ็นเซอร์ตรวจจับแสงที่ใช้ควบคุมหลอดไฟเพื่อให้หลอดไฟสว่างเมื่อมีแสงน้อย สมมติว่าเซ็นเซอร์มีค่าเท่ากับ 0 เมื่อไม่มีแสงในตอนกลางคืน และค่าจะเพิ่มขึ้นจนถึง 800 ในตอนกลางวัน เกณฑ์ที่ดีสำหรับโปรแกรมนี้คืออะไร 400? คำตอบขึ้นอยู่กับความมืดที่ควรจะเป็นก่อนที่ไฟจะเปิดขึ้น ค่าต่ำเกินไปจะทำให้หลอดไฟเปิดช้า ค่าสูงเกินไปจะทำให้หลอดไฟเปิดก่อนเวลาอันควร ในทางปฏิบัติโปรแกรมเมอร์จะต้องศึกษาเกณฑ์ที่เหมาะสมจากการสังเกตเซ็นเซอร์ในเวลานั้น เมื่อเจ้าของหลอดไฟรู้สึกว่ามืดพอที่จะเปิดสวิตซ์ได้ ในกรณีนี้เงื่อนไขจะกำหนดโดยค่าความไวแสงของหลอดไฟ
+{% endhint %}
 
-Conditions can be combined to form a more complex definition. Logical operators are often used. The example below shows a condition that requires two buttons to be pressed in order to turn on a motor.
+เงื่อนไขต่างๆ สามารถที่จะรวมเข้าด้วยกันเพื่อให้มีความซับซ้อนเพิ่มมากขึ้นได้ ตัวอย่างด้านล่างแสดงเงื่อนไขที่ต้องกดปุ่มสองปุ่มเพื่อเปิดมอเตอร์
 
 ```text
 if sensor1 > 500 and sensor2 > 500 [ a, on wait 10 off]
@@ -36,7 +38,7 @@ if sensor1 > 500 and sensor2 > 500 [ a, on wait 10 off]
 
 ## IF-ELSE {#if-else}
 
-The IF-ELSE program-control is an extension of an IF. In addition to defining what actions to perform when the condition is true, IF-ELSE can also define what to do when the condition is false. The following example modifies the original example so that it turns on the motor when the switch is pressed and off when the switch is released.
+การเขียนโปรแกรมควบคุมแบบ IF-ELSE เป็นส่วนเพิ่มเติมจาก IF นอกเหนือจากการกำหนดสิ่งที่จะทำเมื่อเงื่อนไขเป็นจริง IF-ELSE ยังสามารถกำหนดได้ว่าจะทำอย่างไรเมื่อเงื่อนไขเป็นเท็จ ตัวอย่างต่อไปนี้จะปรับเปลี่ยนจากตัวอย่างก่อนหน้านี้ โดยมอเตอร์จะทำงานเมื่อสวิตซ์ถูกกดไว้ และเมื่อปล่อยมือที่กดสวิตซ์ มอเตอร์จะหยุดทำงาน
 
 {% tabs %}
 {% tab title="Logo" %}
@@ -52,15 +54,15 @@ ifelse sensor1 > 500 [a, on] [ a, off]
 
 ## FOREVER {#forever}
 
-The FOREVER program-control tells the program to loop indefinitely, executing the blocks it contains. Most programs will need this loop. The sensor\_control example is shown again below with and without FOREVER \(right and left images respectively\). Without a FOREVER, the program will check the condition once and quit, which is not the desired behavior. This is a common mistake of beginners.
+การเขียนโปรแกรมควบคุมโดยใช้ FOREVER เป็นการบอกว่าบล็อกที่อยู่ในบล็อกนี้จะทำงานวนไปเรื่อยๆ\(ลูป\) ซึ่งโปรแกรมส่วนมากมักจะต้องใช้ลูปนี้ ตัวอย่างการควบคุมเซ็นเซอร์โดยใช้และไม่ใช้ FOREVER ดังแสดงด้านล่าง \(ภาพขวาและซ้ายตามลำดับ\) หากไม่ใช้ FOREVER โปรแกรมจะตรวจสอบเงื่อนไขหนึ่งครั้งและออกจากโปรแกรมซึ่งไม่ใช่พฤติกรรมที่ต้องการ นี่คือข้อผิดพลาดที่พบบ่อยของผู้เริ่มต้น
 
 | ![](https://lh4.googleusercontent.com/Q4EEgXDJnV9EkXZOEx4blecRAjVWdzUHasmo4ORgeasnBrJAlKoT1tM6nwaQq1jBbeZicOTt1vjQ4UOAVaaqu2-dVKjZUNQhmHBqvOoFiky3cOwnYrEj1PrvWh9HPdGw1hXV9xdK) | ![](https://lh4.googleusercontent.com/G1fTh-Pcqm_u7QmlbQfUQzH6BX_erENFgirNtwvjt3BjMNsOD6yItjnq39xAqRoch5q4eov8oXMZcohXFapTA94s2_7MI7ipSUWhXVjSuIldxizaz3qOslQHq-xf3ZuRk6L0nukT) |
 | --- | --- |
-| Without FOREVER | With FOREVER |
+| ไม่ใช้ FOREVER | ใช้ FOREVER |
 
 ## WAITUNTIL {#waituntil}
 
-The WAITUNTIL program-control allows the program to halt until the given condition is true. The example program below shows how WAITUNIL is used so that the program beeps once every time a switch is pressed
+การเขียนโปรแกรมควบคุมโดยใช้ WAITUNTIL คือการทำให้โปรแกรมหยุดรอจนกว่าเงื่อนไขจะเป็นจริง ตัวอย่างโปรแกรมด้านล่างแสดงวิธีใช้ WAITUNTIL เพื่อให้โปรแกรมส่งเสียปิ๊บแค่ครั้งเดียวต่อการกดสวิตซ์ในแต่ละครั้ง
 
 {% tabs %}
 {% tab title="Logo" %}
@@ -79,8 +81,6 @@ forever [
 {% endtabs %}
 
 {% hint style="info" %}
-Note that without the WAITUNTIL, the program will beep repeatedly while the switch remains pressed.
+โปรดทราบว่าหากไม่มี WAITUNTIL โปรแกรมจะส่งเสียงปิ๊บซ้ำๆ ในขณะที่ยังกดสวิตซ์
 {% endhint %}
-
-
 
