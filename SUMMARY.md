@@ -1,6 +1,6 @@
 # Table of contents
 
-* [GoGo Board 5 User Guide](README.md)
+* [การใช้งานโกโกบอร์ด](README.md)
 * [1. ทำความรู้จักกับโกโกบอร์ด](overview.md)
 * [2. การติดตั้งโปรแกรมและทดสอบตัวบอร์ด](software-setup.md)
 * [3. การใช้เซนเซอร์](sensor/README.md)
