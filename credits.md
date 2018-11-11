@@ -1,10 +1,6 @@
 # Credits
 
-* Arnan \(Roger\) Sipitakiat
+Learning Inventions Laboratory
 
-  Learning Inventions Laboratory
-
-  Faculty of Engineering, Chiang Mai University
-
-* Marutpong Chailangka
+Faculty of Engineering, Chiang Mai University
 
